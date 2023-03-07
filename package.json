@@ -1,0 +1,50 @@
+{
+  "name": "gatsby-starter-contentful-homepage",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "gatsby develop",
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "gatsby-provision": "gatsby-provision-contentful --contentful-data-path='./scripts/data.json' --space-id=$CONTENTFUL_SPACE_ID --management-token=$CONTENTFUL_MANAGEMENT_TOKEN",
+    "setup": "node ./scripts/setup.js",
+    "export-content": "contentful space export --space-id=$SPACE_ID --management-token=$MANAGEMENT_TOKEN --export-dir=scripts --content-file=data.json"
+  },
+  "dependencies": {
+    "@contentful/rich-text-html-renderer": "^15.11.1",
+    "gatsby-plugin-manifest": "^5.0.0",
+    "gatsby-source-contentful": "^8.0.0",
+    "@fontsource/dm-mono": "^4.5.9",
+    "@fontsource/dm-sans": "^4.5.8",
+    "@vanilla-extract/babel-plugin": "^1.2.0",
+    "@vanilla-extract/css": "^1.9.0",
+    "@vanilla-extract/css-utils": "^0.1.2",
+    "@vanilla-extract/webpack-plugin": "^2.1.12",
+    "gatsby": "^5.0.0",
+    "gatsby-plugin-image": "^3.0.0",
+    "gatsby-plugin-sharp": "^5.0.0",
+    "gatsby-plugin-vanilla-extract": "^4.0.1",
+    "gatsby-source-filesystem": "^5.0.0",
+    "gatsby-transformer-sharp": "^5.0.0",
+    "is-absolute-url": "^4.0.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-feather": "^2.0.9",
+    "sharp": "^0.30.5"
+  },
+  "devDependencies": {
+    "chalk": "4",
+    "contentful-cli": "^1.15.3",
+    "contentful-import": "^8.3.2",
+    "gatsby-provision-contentful": "^0.0.5",
+    "inquirer": "^8.2.0",
+    "yargs-parser": "^21.0.0",
+    "prettier": "2.5.1",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.5"
+  }
+}
